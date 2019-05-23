@@ -10,7 +10,7 @@ Data structures that hold multiple variables of the same data type.
 
 
 
-### [Uninitialized Elements Are Zero](http://tpcg.io/iY01WA)
+### [Uninitialized Elements Are Zero](http://tpcg.io/iY01WA)
 
 If all elements of the array are not initialized, the rest will be set to 0.
 
@@ -18,7 +18,7 @@ If all elements of the array are not initialized, the rest will be set to 0.
 
 
 
-### [Pass Array To Functions](http://tpcg.io/BeBk25)
+### [Pass Array To Functions](http://tpcg.io/BeBk25)
 
 ![](./Photos/1-Arrays/3-Example-Code-Sum.png)
 
@@ -47,7 +47,7 @@ int*   pi = &i;
 
 ![](./Photos/2-Pointers/3-Example-Code-Cast.png)
 
-### Pointer To Pointer
+### Pointer To Pointer
 
 Pointers have memory addresses. This means that I can have another pointer that contains the memory address of a pointer. This would be called a pointer to pointer.
 
@@ -64,7 +64,7 @@ pp = &p;
 
 ![](./Photos/2-Pointers/4-Pointer-To-Pointer.png)
 
-### [Generic Pointer (void*)](http://tpcg.io/e6mSGU)
+### [Generic Pointer (void*)](http://tpcg.io/e6mSGU)
 
 It is used when the type of object stored at a memory location is not known. Hence, it can not dereferenced directly. Typecasting to a known pointer type is necessary. This allows the compiler to determine how many bytes to access.
 
@@ -83,7 +83,7 @@ It is used when the type of object stored at a memory location is not known. Hen
 
 ![](./Photos/3-PointerArithmetic/1-Pointer-Arithmetic.png)
 
-### [Pointer Arithmetic Example](http://tpcg.io/SJswzo)
+### [Pointer Arithmetic Example](http://tpcg.io/SJswzo)
 
 To understand example code better. Please visit [the difference between x++ and ++x blog post](https://dev.to/somedood/the-difference-between-x-and-x-44dl).
 
@@ -129,7 +129,7 @@ char* planets[] = {"Mercury", "Venus", "Earth",
 
 ![](./Photos/4-Strings/1-Array-Of-Strings.png)
 
-### Reading Strings
+### Reading Strings
 
 ```cpp
 string name("World");
@@ -141,7 +141,7 @@ string str;
 getline(cin, str);
 ```
 
-# 5. Dynamic Memory Allocation
+# 5. Dynamic Memory Allocation
 
 Dynamically allocate as much space as needed during execution.
 
