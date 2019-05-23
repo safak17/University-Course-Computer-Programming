@@ -1,7 +1,24 @@
 This repository is prepared for C++ Cheat Sheet along with the example codes.
 
-[TOC]
+# Table Of Contents
+1. [Arrays](#arrays)
+  1. [Uninitialized Elements Are Zero](uninitialized-elements-are-zero)
+  2. [Pass Array To Functions](pass-array-to-functions)
+2. [Pointers](#pointers)
+  1. [Cast](#cast)
+  2. [Pointer To Pointer](#pointer-to-pointer)
+  3. [Generic Pointer](#generic-pointer)
+  4. [Function Pointers](#function-pointers)
+3. [Pointer Arithmetic](#pointer-arithmetic)
+  1. [Pointer Arithmetic Example](#pointer-arithmetic-example)
+4. [Strings](#strings)
+  1. [Array Of Strings](#array-of-strings)
+  2. [Reading Strings](#reading-strings)
+5. [Dynamic Memory Allocation](#dynamic-memory-allocation)
+6. [Structure (Record)](#structure-record)
+7. [File IO](#file-io)
 
+<a name="arrays"></a>
 # 1. Arrays
 
 Data structures that hold multiple variables of the same data type.
@@ -9,7 +26,7 @@ Data structures that hold multiple variables of the same data type.
 ![](./Photos/1-Arrays/1-Array.png)
 
 
-
+<a name="uninitialized-elements-are-zero"></a>
 ### [Uninitialized Elements Are Zero](http://tpcg.io/iY01WA)
 
 If all elements of the array are not initialized, the rest will be set to 0.
@@ -17,11 +34,12 @@ If all elements of the array are not initialized, the rest will be set to 0.
 ![](./Photos/1-Arrays/2-Example-Code-Array-Initialization.png)
 
 
-
+<a name="pass-array-to-functions"></a>
 ### [Pass Array To Functions](http://tpcg.io/BeBk25)
 
 ![](./Photos/1-Arrays/3-Example-Code-Sum.png)
 
+<a name="pointers"></a>
 # 2. Pointers
 
 Stores memory addresses. Address of a variable can be obtained by the 'address of' operator (&) .
@@ -41,12 +59,14 @@ int*   pi = &i;
 
 ![](./Photos/2-Pointers/1-Visualization.png)
 
+<a name="cast"></a>
 ### [Cast](http://tpcg.io/pxHcKc)
 
 ![](./Photos/2-Pointers/2-Cast.png)
 
 ![](./Photos/2-Pointers/3-Example-Code-Cast.png)
 
+<a name="pointer-to-pointer"></a>
 ### Pointer To Pointer
 
 Pointers have memory addresses. This means that I can have another pointer that contains the memory address of a pointer. This would be called a pointer to pointer.
@@ -64,6 +84,7 @@ pp = &p;
 
 ![](./Photos/2-Pointers/4-Pointer-To-Pointer.png)
 
+<a name="generic-pointer"></a>
 ### [Generic Pointer (void*)](http://tpcg.io/e6mSGU)
 
 It is used when the type of object stored at a memory location is not known. Hence, it can not dereferenced directly. Typecasting to a known pointer type is necessary. This allows the compiler to determine how many bytes to access.
@@ -75,14 +96,17 @@ It is used when the type of object stored at a memory location is not known. Hen
 
 ![](./Photos/2-Pointers/5-Example-Code-Generic.png)
 
+<a name="function-pointers"></a>
 ### [Function Pointers](http://tpcg.io/5N3aoV)
 
 ![](./Photos/2-Pointers/6-Example-Code-FunctionPointer.png)
 
+<a name="pointer-arithmetic"></a>
 # 3. Pointer Arithmetic
 
 ![](./Photos/3-PointerArithmetic/1-Pointer-Arithmetic.png)
 
+<a name="pointer-arithmetic-example"></a>
 ### [Pointer Arithmetic Example](http://tpcg.io/SJswzo)
 
 To understand example code better. Please visit [the difference between x++ and ++x blog post](https://dev.to/somedood/the-difference-between-x-and-x-44dl).
@@ -100,7 +124,7 @@ M    == &M[0][0]
 M[1] == &M[1][0]
 M[2] == &M[2][0]
 ```
-
+<a name="strings"></a>
 # 4. Strings
 
 A string is an array of characters terminated by the NULL char ('\0').
@@ -118,7 +142,7 @@ char str[]  = "abc";
 // Cannot be modified, READ-ONLY
 char* str   = "abc";
 ```
-
+<a name="array-of-strings"></a>
 ### Array of Strings
 
 ```cpp
@@ -129,6 +153,7 @@ char* planets[] = {"Mercury", "Venus", "Earth",
 
 ![](./Photos/4-Strings/1-Array-Of-Strings.png)
 
+<a name="reading-strings"></a>
 ### Reading Strings
 
 ```cpp
@@ -141,6 +166,7 @@ string str;
 getline(cin, str);
 ```
 
+<a name="dynamic-memory-allocation"></a>
 # 5. Dynamic Memory Allocation
 
 Dynamically allocate as much space as needed during execution.
@@ -159,6 +185,7 @@ delete var;
 delete[] arr;
 ```
 
+<a name="structure-record"></a>
 # [6. Structure (Record)](http://tpcg.io/zNV90V)
 
 Data frequently occurs in groups. Store variables with dissimilar types together in a container called structure.
@@ -182,6 +209,7 @@ Student students[2];
 Student* students = new Student[2];
 ```
 
+<a name="file-io"></a>
 # [7. File IO](https://repl.it/@safak17/ComputerProgramming-7-FileIO)
 
 A file is a collection on information, usually stored on a computer’s disk.
