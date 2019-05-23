@@ -2,8 +2,8 @@ This repository is prepared for C++ Cheat Sheet along with the example codes.
 
 # Table Of Contents
 1. [Arrays](#arrays)
-    1. [Uninitialized Elements Are Zero](uninitialized-elements-are-zero)
-    2. [Pass Array To Functions](pass-array-to-functions)
+    1. [Uninitialized Elements Are Zero](#uninitialized-elements-are-zero)
+    2. [Pass Array To Functions](#pass-array-to-functions)
 2. [Pointers](#pointers)
     1. [Cast](#cast)
     2. [Pointer To Pointer](#pointer-to-pointer)
